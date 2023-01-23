@@ -1,0 +1,30 @@
+format = """
+$os \
+$username\
+$hostname\
+$directory\
+$git_branch\
+$time\
+$status\
+$shell\
+$character
+"""
+
+add_newline = false
+
+[character]
+success_symbol = "[→](green)"
+error_symbol = "[→](red)"
+
+[line_break]
+disabled = true
+
+[swift]
+disabled = true
+
+[git_status]
+disabled = true
+
+[os]
+format = "[$name](blue)"
+disabled = false
