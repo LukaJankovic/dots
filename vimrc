@@ -20,6 +20,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdcommenter'
 Plug 'itchyny/lightline.vim'
 Plug 'chrisbra/Colorizer'
+Plug 'justinmk/vim-sneak'
 call plug#end()
 
 set t_Co=256                         " Enable 256 colors
