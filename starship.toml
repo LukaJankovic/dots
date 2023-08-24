@@ -11,6 +11,10 @@ $character
 
 add_newline = false
 
+[directory.substitutions]
+'/home/luka/winhome' = ' ~'
+'~/winhome' = ' ~'
+
 [character]
 success_symbol = "[→](green)"
 error_symbol = "[→](red)"
