@@ -15,5 +15,10 @@ alias ls="ls --color=auto"
 SAVEHIST=1000  # Save most-recent 1000 lines
 HISTFILE=~/.zsh_history
 
+# Fix keybinds
+bindkey  "^[[H"   beginning-of-line
+bindkey  "^[[F"   end-of-line
+bindkey  "^[[3~"  delete-char
+
 # Start starship
 eval "$(starship init zsh)"
