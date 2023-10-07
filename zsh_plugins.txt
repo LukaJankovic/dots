@@ -1,5 +1,6 @@
 # add fish-like features
 zsh-users/zsh-syntax-highlighting
+jirutka/zsh-shift-select
 
 # other
 trystan2k/zsh-tab-title
