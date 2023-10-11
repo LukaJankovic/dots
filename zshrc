@@ -10,6 +10,7 @@ antidote load
 
 # Aliases
 alias ls="ls --color=auto"
+alias make="mingw32-make"
 
 # Fix history
 SAVEHIST=1000  # Save most-recent 1000 lines
