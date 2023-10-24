@@ -1,3 +1,5 @@
+set enc=utf-8
+
 " vim-plug
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -18,7 +20,7 @@ set termguicolors
 set number
 
 set autoindent expandtab tabstop=4 shiftwidth=4
-set fillchars+=vert:\▏
+set fillchars+=vert:\│
 
 highlight RedundantSpaces ctermbg=9
 match RedundantSpaces /\s\+$/

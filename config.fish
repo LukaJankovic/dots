@@ -2,9 +2,6 @@ set fish_greeting
 
 starship init fish | source
 
-alias vim=nvim
-alias vi=nvim
-
 function sudo
     if test "$argv" = !!
         eval command sudo $history[1]
