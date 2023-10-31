@@ -33,6 +33,10 @@ set clipboard=unnamed " unnamedplus for linux
 
 set updatetime=750
 
+set scrolloff=999
+
+autocmd BufRead,BufNewFile *.md setlocal spell
+
 " keybinds
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
