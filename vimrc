@@ -1,4 +1,5 @@
 set enc=utf-8
+set nocompatible
 
 " vim-plug
 if empty(glob('~/.vim/autoload/plug.vim'))
@@ -10,7 +11,11 @@ endif
 call plug#begin()
     Plug 'arcticicestudio/nord-vim'
     Plug 'airblade/vim-gitgutter'
+    Plug 'jasonccox/vim-wayland-clipboard'
+    Plug 'img-paste-devs/img-paste.vim'
 call plug#end()
+
+autocmd FileType markdown nmap <buffer><silent> <leader>p :call mdip#MarkdownClipboardImage()<CR>
 
 " visual
 
@@ -29,7 +34,7 @@ match RedundantSpaces /\s\+$/
 
 set backspace=indent,eol,start
 set mouse=a
-set clipboard=unnamed " unnamedplus for linux
+set clipboard=unnamedplus " unnamedplus for linux
 
 set updatetime=750
 
@@ -38,6 +43,7 @@ set scrolloff=999
 autocmd BufRead,BufNewFile *.md setlocal spell
 
 " keybinds
+
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
